@@ -1,0 +1,18 @@
+<div *ngFor="let gift of gifts">
+    <h3>{{ gift.id }}- {{ gift.name }} - SL:{{ gift.quantity}} - Tỉ lệ: {{gift.probability}}%</h3>
+</div>
+
+
+
+<button class="button" type="button" (click)="run()">Runnn</button>
+
+<div *ngIf="isEnd">
+    <div *ngFor="let id of objectKeys(result)">
+        Id: <b>{{id}}</b> and total: <b>{{result[id]}}</b>
+    </div>
+
+    <div  *ngFor="let log of logs">
+        <p>{{ log }}</p>
+    </div>
+
+</div>
