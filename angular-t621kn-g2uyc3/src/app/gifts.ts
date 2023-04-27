@@ -6,20 +6,20 @@ export interface Gift {
   default: boolean;
 }
 
-export const totalExceed = 0;
+export const totalExceed = 5;
 
 export const gifts = [
   {
     id: 1,
     name: 'Tiền mặt 100k',
-    quantity: 2000,
+    quantity: 999,
     probability: 0,
     default: true
   },
   {
     id: 2,
     name: 'Tiền mặt 200k',
-    quantity: 900,
+    quantity: 200,
     probability: 0,
     default: false
   },
