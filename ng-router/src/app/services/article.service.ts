@@ -16,7 +16,8 @@ export class ArticleService {
     ]).pipe(shareReplay(1));
   }
 
-  getArticle(slug:string): Observable<Article | undefined> {
+  getArticle(slug:string): Observable<Article> {
+    // @ts-ignore
     return this.articles$.pipe(map(articles => articles.find(ar => ar.slug === slug)));
   }
 }
